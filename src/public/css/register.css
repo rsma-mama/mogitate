@@ -1,0 +1,33 @@
+
+.circle-check {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.circle-check input[type="checkbox"] {
+    appearance: none;          /* デフォルト消す */
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000;
+    border-radius: 50%;        /* 丸型 */
+    margin-right: 6px;
+    position: relative;
+}
+
+/* チェックされた時 */
+.circle-check input[type="checkbox"]:checked {
+    background-color: #000;    /* 黒背景 */
+}
+
+/* 白いチェックマーク */
+.circle-check input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
