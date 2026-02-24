@@ -1,0 +1,12 @@
+.header {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 700;
+    font-size: 28px;
+    font-style: normal;
+    }
+
+.header__logo,
+.header__logo:visited {
+    color: orange;
+    text-decoration: none;
+    }    

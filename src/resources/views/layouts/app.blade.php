@@ -8,15 +8,19 @@
     <!-- 共通CSS -->
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <link rel="stylesheet" href="{{ asset('css/sanitize.css')}}">
-　　<!-- ページごとのCSS -->
+    <!-- ページごとのCSS -->
     @yield('css')
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <header class="header">
         <div class="header__inner">
-            <a class="header__logo" href="/products">mogitate</a>    
+            <a class="header__logo" href="/products">mogitate</a>   
         </div>
     </header>
     

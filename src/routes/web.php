@@ -24,11 +24,11 @@ Route::get('/products/register',[ProductController::class,'create']);
 // PG04商品登録処理
 Route::post('/products/register',[ProductController::class,'store']);
 // PG02商品詳細
-Route::get('/products/detail/{id}',[ProductController::class,'show']);
+Route::get('/products/detail/{productId}',[ProductController::class,'show']);
 // PG03商品更新画面
-Route::get('/products/{id}/update',[ProductController::class,'edit']);
+Route::get('/products/{productId}/update',[ProductController::class,'edit']);
 // PG03商品更新処理
-Route::post('/products/{id}/update',[ProductController::class,'update']);
+Route::post('/products/{productId}/update',[ProductController::class,'update']);
 // PG05商品検索
 Route::get('/products/search',[ProductController::class,'search']);
 // PG06商品削除処理

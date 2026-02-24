@@ -53,17 +53,18 @@ class ProductController extends Controller
         return redirect('/products');
     }
 
-    public function show($id)
+    public function show($productId)
     {
-        $product = Product::findOrFail($id);
+        $product = Product::with('seasons')->findOrFail($productId);
+        $seasons = Season::all();
 
-        return view('products.detail',compact('product'));
+        return view('products.detail',compact('product', 'seasons'));
 
     }
 
-    public function edit($id)
+    public function edit($productId)
     {
-        $product = Product::findOrFail($id);
+        $product = Product::findOrFail($productId);
         $seasons = Season::all();
         return view('products.update', compact('product', 'seasons'));
     }
@@ -72,7 +73,7 @@ class ProductController extends Controller
     public function update(ProductRequest $request, $id)
     {
         
-        $product = Product::findOrFail($id);
+        $product = Product::findOrFail($productId);
         
         if($request->hasFile('image')){
             $path = $request->file('image')->store('image', 'public');
@@ -108,9 +109,9 @@ class ProductController extends Controller
         return view('products.index', compact('products'));
     }
 
-    public function delete($id)
+    public function delete($productId)
     {
-        $product = Product::findOrFail($id);
+        $product = Product::findOrFail($productId);
         $product -> delete();
 
         return redirect('/products');

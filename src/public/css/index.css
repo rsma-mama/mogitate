@@ -2,15 +2,55 @@
     display: flex;
     gap: 40px;
     padding: 40px;
+    background-color: antiquewhite;
+}
+
+.main-container {
+    display: flex;
+}
+
+.form {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    width: 180px;
+}
+
+.form input[type="text"] {
+    border-radius: 18px;       
+    padding: 10px 15px;        
+    border: 1px solid #ccc;   
+    box-sizing: border-box;   
+    width: 100%;              
+    margin-bottom: 10px;      
+}
+
+.form select {
+    border-radius: 8px;       
+    padding: 8px 12px;       
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;              
+    cursor: pointer;          
+    background-color: #fff;
+    font-size: 16px;
 }
 
 .sidebar {
-    width: 250px;
+    width: 25%;
 }
 
 .product-area {
     flex: 1;
     padding: 40px;
+    width: 75%;
+}
+
+.product-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .product-grid {
@@ -19,12 +59,22 @@
     gap: 20px;
 }
 
-.add-btn {
+.add-btn,
+.search-btn {
     padding: 8px 16px;
-    background-color: black;
-    color: white;
+    background-color: orange;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.add-btn:hover,
+.search-btn:hover {
+    background-color: #e67e22;
 }
 
 .card {
@@ -61,6 +111,44 @@
 .pagination {
     text-align: center;
     margin-top: 40px;
+}
+
+.pagination .active {
+    background-color: orange;  /* アクティブページの背景色 */
+    color: black;              /* 文字色 */
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.pagination a,
+.pagination span {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.sort-tag {
+    display: inline-flex;
+    padding: 4px 10px;
+    border: 1px solid orange;
+    border-radius: 20px;
+    position: static;
+    margin: 10px 0;
+    width: fit-content;
+    white-space: nowrap; 
+}
+
+.sort-tag a {
+    margin-left: 8px;
+    text-decoration: none;
+    color: orange;
 }
 
 .pagination a,

@@ -39,24 +39,24 @@
 | ID | 種別 | 対象 | 内容 | 状態 |
 | --- | --- | --- | --- | --- |
 | pg04-route | ルーティング | /products/register | GET/POST のルート定義 | 完了 |
-| pg04-form-view | 画面 | 登録フォーム | 商品名・価格・画像・説明・季節チェックボックスを持つフォーム作成 | 未着手 |
-| pg04-store | コントローラ | 登録処理 | バリデーション、画像アップロード、`product_season` 登録を行う登録処理実装 | 未着手 |
+| pg04-form-view | 画面 | 登録フォーム | 商品名・価格・画像・説明・季節チェックボックスを持つフォーム作成 | 完了 |
+| pg04-store | コントローラ | 登録処理 | バリデーション、画像アップロード、`product_season` 登録を行う登録処理実装 | 完了 |
 
 ### 3.3 PG02 商品詳細 `/products/detail/{productId}`
 
 | ID | 種別 | 対象 | 内容 | 状態 |
 | --- | --- | --- | --- | --- |
-| pg02-route | ルーティング | /products/detail/{productId} | 商品詳細画面のルート定義 | 未着手 |
-| pg02-controller | コントローラ | ProductController@show | 単一商品の詳細取得処理実装 | 未着手 |
-| pg02-view | 画面 | 詳細表示 | 商品情報＋季節一覧を表示し、編集・削除リンクを配置 | 未着手 |
+| pg02-route | ルーティング | /products/detail/{productId} | 商品詳細画面のルート定義 | 完了 |
+| pg02-controller | コントローラ | ProductController@show | 単一商品の詳細取得処理実装 | 完了 |
+| pg02-view | 画面 | 詳細表示 | 商品情報＋季節一覧を表示し、編集・削除リンクを配置 | 完了 |
 
 ### 3.4 PG03 商品更新 `/products/{productId}/update`
 
 | ID | 種別 | 対象 | 内容 | 状態 |
 | --- | --- | --- | --- | --- |
-| pg03-route | ルーティング | /products/{productId}/update | GET（編集フォーム）と PATCH/POST（更新処理）のルート定義 | 未着手 |
-| pg03-form-view | 画面 | 編集フォーム | 既存値と季節の選択状態を反映した編集フォーム作成 | 未着手 |
-| pg03-update | コントローラ | 更新処理 | バリデーション、画像差し替え、中間テーブル再同期を含む更新処理実装 | 未着手 |
+| pg03-route | ルーティング | /products/{productId}/update | GET（編集フォーム）と PATCH/POST（更新処理）のルート定義 | 完了 |
+| pg03-form-view | 画面 | 編集フォーム | 既存値と季節の選択状態を反映した編集フォーム作成 | 完了 |
+| pg03-update | コントローラ | 更新処理 | バリデーション、画像差し替え、中間テーブル再同期を含む更新処理実装 | 完了 |
 
 ### 3.5 PG05 検索 `/products/search`
 

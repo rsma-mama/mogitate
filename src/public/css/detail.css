@@ -1,0 +1,176 @@
+.breadcrumb {
+    display: block !important; 
+    margin: 20px 0;
+    font-size: 16px;          
+    color: #333 !important;   
+    background: transparent;   
+}
+
+.breadcrumb a {
+    color: #007bff;            
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #000;               
+    margin: 0 10px;
+}
+
+.detail-flex-container {
+    display: flex;          
+    flex-wrap: nowrap;      
+    gap: 40px;              
+    align-items: flex-start;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.detail-image-area {
+    width: 40%;            
+    min-width: 300px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.detail-form-area {
+    flex: 1; 
+}
+
+.detail-form-area input[type="text"],
+.detail-form-area input[type="number"]{
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.file-input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+#image-input {
+    width: 110px; 
+    overflow: hidden;
+}
+
+.file-name-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;        
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+}
+
+.description-group {
+    margin-top: 30px;
+}
+
+.description-group textarea {
+    width: 90%;
+    max-width: 850px;           
+    height: 150px;        
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    resize: none;          
+    font-size: 16px;
+    line-height: 1.6; 
+    display: block;     
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;               
+    margin-top: 30px;
+    margin-bottom: 20px;     
+}
+
+.btn-back,
+.btn-submit {
+    display: inline-block;
+    width: 120px;            
+    padding: 12px 0;         
+    border-radius: 8px;      
+    text-align: center;      
+    font-weight: bold;
+    text-decoration: none;   
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s; 
+}
+
+.btn-back {
+    background-color: #ccc;
+    color: #333;
+}
+
+.btn-submit {
+    background-color: #ffb74d; 
+    color: black;            
+}
+
+.btn-back:hover,
+.btn-submit:hover {
+    opacity: 0.8;
+}
+
+.delete-form {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.delete-form {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+.delete-btn {
+    background: none;      
+    border: none;          
+    font-size: 30px;       
+    cursor: pointer;       
+    padding: 10px; 
+    filter: invert(15%) sepia(95%) saturate(6932%) hue-rotate(358deg) brightness(95%) contrast(112%);       
+    transition: transform 0.2s; 
+}
+
+.delete-btn:hover {
+    transform: scale(1.2);
+}
