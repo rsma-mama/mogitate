@@ -69,7 +69,7 @@ php artisan serve
 
 products と seasons は多対多の関係
 
-![ER図] (<img width="903" height="697" alt="mogitate drawio" src="https://github.com/user-attachments/assets/d7b9d5af-9187-44e4-9134-5c54cc0707c0" />)
+![ER図] <img width="903" height="697" alt="mogitate drawio" src="https://github.com/user-attachments/assets/d7b9d5af-9187-44e4-9134-5c54cc0707c0" />
 
 
 
