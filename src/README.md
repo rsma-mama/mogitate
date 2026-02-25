@@ -69,5 +69,5 @@ php artisan serve
 
 products と seasons は多対多の関係
 
-![ER図] (mogitate.drawio.png)
+![ER図] (/Users/chizum/coachtech/laravel/mogitate/mogitate.drawio.png)
 
